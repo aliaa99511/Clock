@@ -1,0 +1,213 @@
+
+/*#2ecc71,
+#16a085 */
+body{  
+    background-color: #16a085;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.clock{
+    background: white;
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 10px solid #111;
+}
+.clock::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(285deg, rgba(0,0,0,0.175) 50%, rgba(0,0,0,0.1) 50%);
+}
+.clock::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+.num{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+/*
+.num::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 15px;
+    background-color: black;
+}
+*/
+.num1{transform: rotate(30deg);}
+.num2{transform: rotate(60deg);}
+.num3{ transform: rotate(90deg);}
+.num4{transform: rotate(120deg);} 
+.num5{ transform: rotate(150deg);}
+.num6{ transform: rotate(180deg);}
+.num7{transform: rotate(210deg); }
+.num8{ transform: rotate(240deg);}
+.num9{ transform: rotate(270deg);}
+.num10{ transform: rotate(300deg);}
+.num11{ transform: rotate(330deg);}
+
+
+.num1 div{transform: rotate(-30deg);}
+.num2 div{transform: rotate(-60deg);}
+.num3 div{ transform: rotate(-90deg);}
+.num4 div{transform: rotate(-120deg);} 
+.num5 div{ transform: rotate(-150deg);}
+.num6 div{ transform: rotate(-180deg);}
+.num7 div{transform: rotate(-210deg); }
+.num8 div{ transform: rotate(-240deg);}
+.num9 div{ transform: rotate(-270deg);}
+.num10 div{ transform: rotate(-300deg);}
+.num11 div{ transform: rotate(-330deg);}
+
+
+
+.hand{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hand div {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-95%);
+    background-color: #000;
+}
+.sec{
+    width: 1px;
+    height: 40%;
+}
+.min{
+    width: 38%;
+    height: 4px;
+    border-radius: 2px;
+}
+.hour{
+    width: 38%;
+    height: 8px;
+    border-radius: 4px;
+}
+#sec{
+    transform: rotate(30deg);
+}
+
+
+
+
+
+/*
+
+body{  
+    background-color: #16a085;
+    overflow: hidden;
+}
+.clock{
+    background: white;
+    overflow: hidden;
+    position: relative;
+    top: 100px;
+    left: 32%;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+
+}
+.overlay{
+    background: linear-gradient(285deg, rgba(0,0,0,0.175) 50%, rgba(0,0,0,0.1) 50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.num{
+    font-size: 23px;
+    position: absolute;
+}
+.num1{    left: 73%;top: 13%;}
+.num2{   left: 86%;top: 28%;   }
+.num3{      left: 88%;top: 47%;    }
+.num4{   left: 82%;top: 64%;    }
+.num5{      left: 68%;top: 81%;   }
+.num6{       left: 45%; bottom: 6%;  }
+.num7{   left: 23%;bottom: 13%; }
+.num8{     left: 12%;    bottom: 27%; }
+.num9{       left: 6%;bottom: 45%;}
+.num10{      left: 7%;bottom: 65%; }
+.num11{     left: 21%;bottom: 81%; }
+.num12{  left: 48%; top: 4%;     }
+
+.poi{
+
+}
+
+.point{
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    width: 10px;
+    height: 10px;
+    background-color: black;  
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+#sec{
+    position: absolute;
+    top: 52%;
+    left: 49%;
+    width: 3px;
+    height: 110px;
+    background-color: red;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+#min{
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    width: 2px;
+    height: 97px;
+    background-color: black;
+}
+#hour{
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    width: 2px;
+    height: 90px;
+    background-color: black;
+}*/
